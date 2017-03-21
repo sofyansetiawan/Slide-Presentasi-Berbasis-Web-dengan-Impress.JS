@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Source';
+    src: url('../font/SourceSansPro-regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../font/Raleway-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/RobotoCondensed-Regular.ttf');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    color: #323639;
+
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    font-family: 'Source';
+    min-height: 740px;
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.no-support-message{
+    display: none;
+}
+
+.braket{
+    font-size: 70px;
+    font-family: 'Roboto';
+    color: #5d75ef;
+    margin: 20px;
+}
+
+.step{
+    position: relative;
+    width: 1200px;
+    padding: 40px;
+    margin: 20px auto;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    font-family: 'Source', georgia, serif;
+    font-size: 50px;
+    line-height: 1.5;
+}
+
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active {
+    opacity: 1;
+}
+
+.judul-home{
+    font-size: 120px;
+    font-family: 'Raleway';
+    color: #69a3d1;
+    text-align: center;
+}
+
+.by-weboender{
+    font-family: 'Raleway';
+    text-rendering: optimizelegibility;
+    display: block;
+    padding: 20px;
+    background-color: rgba(0, 204, 255, 0.2);
+    box-shadow: 2px 2px 150px rgba(0, 204, 255, 0.2);
+}
+
+.by-weboender p:first-child{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.by-weboender p:last-child{
+    text-align: center;
+    font-size: 40px;
+}
+
+.judul-menu{
+    font-size: 120px;
+    font-family: 'Roboto';
+    text-align: center;
+    color: #2196ff;
+}
+
+.judul-materi{
+    font-size: 120px;
+    text-align: center;
+}
+
+.head-materi{
+    font-size: 100px;
+}
+
+.materi-isi{
+    font-size: 90px;
+}
+
+.small{
+    font-size: 30px;
+}
+
+.ijo{
+    color: #1ed347;
+}
+
+.merah{
+    color: #ff5a79;
+}
+
+.biru{
+    color: #469dd0;
+}
+
+.baris{
+    list-style: circle;
+    width: 900px;
+    margin: 0 auto;
+}
+
+ul.baris_gbr li{
+    width: 700px;
+    margin: 0 auto;
+    list-style: none;
+
+    display: inline;
+}
+
+ul.baris_gbr{
+    clear: both;
+}
+
+img.bulat{
+    -webkit-border-radius: 50em;
+    -moz-border-radius: 50em;
+    border-radius: 50em;
+    width: 230px;
+    height: 230px;
+    border: 10px solid rgba(33, 150, 255, 0.28);
+}
+
